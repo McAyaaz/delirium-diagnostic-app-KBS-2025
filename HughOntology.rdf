@@ -1,0 +1,1182 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir/"
+     xml:base="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Delir="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir">
+        <rdfs:comment>This is an Ontology about Delirium</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#affectsPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#affectsPatient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AssesmentTool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasRiskFactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasRiskFactor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RiskFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#treatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#treatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Intervention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#undergoesIntervention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#undergoesIntervention">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Intervention"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LanguageDisturbance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LanguageDisturbance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Speech/langauge disturbance</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PredisposingFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PredisposingFactor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Main chronic risk factor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#attentionScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#attentionScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Score for attention (from assessment tool)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#disorientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#disorientation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Presence of disorientation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Duration of delirium episode</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#emotionalLability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#emotionalLability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Mood Instability</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#fluctuationPattern -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#fluctuationPattern">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Description of symptom fluctuation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hallucinations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hallucinations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Presence of hallucinations</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#memoryImpairment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#memoryImpairment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Presence of Memory impairement</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#onsetTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#onsetTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Date and time of delirium onset</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#precipatingFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#precipatingFactor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Main acute cause</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#psychomotorActivity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#psychomotorActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Motoric alteration (agitated, lethargic, normal)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#resolved -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#resolved">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Whether delirium episode has resolved</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#severityScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#severityScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Severity rating (e.g., MDAS, DRS-R-98)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#sleepDisturbance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#sleepDisturbance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Sleep-wake cycle disruption</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#subtype -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#subtype">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">Delirium subtype (hyperactive, hypoactive, mixed)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AssesmentTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AssesmentTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#70-79"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#StructuredDiagnosticTool"/>
+        <rdfs:comment>(Confusion_Assesment_Method)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM-ICU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM-ICU">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#70-79"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICUSPecificTool"/>
+        <rdfs:comment>(Confusion_Assessment_Method_for_he_ICU)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DOS">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#80-89"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#StructuredDiagnosticTool"/>
+        <rdfs:comment>Delirium_Observation_Scale</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DRSR98 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DRSR98">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#60-69"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SeverityandResearchScale"/>
+        <rdfs:comment>(Delirium_Rating_Scale-Revised-98)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DeliriumType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DeliriumType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Hallucination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Hallucination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveDelirium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveDelirium">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveTool"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasRiskFactor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveRisk"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DeliriumType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveTool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>too active</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AssesmentTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveDelirium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveDelirium">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveTool"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasRiskFactor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DeliriumType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveTool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>not active enough</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RiskFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AssesmentTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICDSC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICDSC">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#80-89"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICUSPecificTool"/>
+        <rdfs:comment>(Intensive_Carre_Delirium_Screen_Checklist)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICUSPecificTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICUSPecificTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Inattention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Inattention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Infection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Infection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LossofAppetite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LossofAppetite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MDAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MDAS">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#40-49"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SeverityandResearchScale"/>
+        <rdfs:comment>(Memorial_Delirium_Assessment_Scale)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MedicalAdjustment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MedicalAdjustment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Medication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MixedDelirium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MixedDelirium">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#assesedUsing"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MixedTool"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasRiskFactor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RiskFactor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveSymptom"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasSymptom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DeliriumType"/>
+        <rdfs:comment>may change from one type to another during the course of a day</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MixedTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MixedTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AssesmentTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NUDESC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NUDESC">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#60-69"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#StructuredDiagnosticTool"/>
+        <rdfs:comment>Nursing Delirium Screening Scale</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PastDelirium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PastDelirium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PoorHearingVision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PoorHearingVision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RapidScreeningTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RapidScreeningTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ReorientationTherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ReorientationTherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RiskFactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SQiD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SQiD">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#50-59"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RapidScreeningTool"/>
+        <rdfs:comment>(single_Question_in_Delirium)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SeverityandResearchScale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SeverityandResearchScale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SleepDeprived -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SleepDeprived">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveRisk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#StructuredDiagnosticTool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#StructuredDiagnosticTool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MixedTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#UB-2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#UB-2">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#60-69"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RapidScreeningTool"/>
+        <rdfs:comment>(Ultra-Brief_2-Item_Screener)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#WithdrawalApathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#WithdrawalApathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#40-49"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#RapidScreeningTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#40-49 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#40-49">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">49</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#50-59 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#50-59">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">59</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#60-69 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#60-69">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">69</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#70-79 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#70-79">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#80-89 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#80-89">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Age"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#AgeGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAMICU1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAMICU1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM-ICU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DOS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DOS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DRSR981 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DRSR981">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DRSR98"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Delirium"/>
+        <Delir:onsetTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-05T10:00:00</Delir:onsetTime>
+        <Delir:severityScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</Delir:severityScore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Hallucination1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Hallucination1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Hallucination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICDSC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICDSC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#ICDSC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Inattention -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Inattention">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Inattention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Infection1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Infection1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Infection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LossofAppetite1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LossofAppetite1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LossofAppetite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MDAS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MDAS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#MDAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Medication1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Medication1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Medication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NUDESC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NUDESC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NUDESC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRisk1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRisk1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHyper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHyper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHyper1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHyper1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HyperactiveRisk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHypo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHypo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#HypoactiveRisk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PastDelirium1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PastDelirium1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PastDelirium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+        <Delir:assesedUsing rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DRSR981"/>
+        <Delir:hasRiskFactor rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#NoRiskHypo1"/>
+        <Delir:hasSymptom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking1"/>
+        <Delir:hasSymptom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#LossofAppetite1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+        <Delir:assesedUsing rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAM1"/>
+        <Delir:hasRiskFactor rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Infection1"/>
+        <Delir:hasSymptom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression1"/>
+        <Delir:hasSymptom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#DisorganizedThinking1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Patient"/>
+        <Delir:assesedUsing rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#CAMICU1"/>
+        <Delir:hasRiskFactor rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SleepDeprived1"/>
+        <Delir:hasSymptom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Aggression1"/>
+        <Delir:hasSymptom rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Hallucination1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PoorHearingVision1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PoorHearingVision1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#PoorHearingVision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SQiD1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SQiD1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SQiD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SleepDeprived1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SleepDeprived1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#SleepDeprived"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#UB21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#UB21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#UB-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Withdrawal1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#Withdrawal1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#WithdrawalApathy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT_Tool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hughm/ontologies/2025/5/Delir#4AT_Tool"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
