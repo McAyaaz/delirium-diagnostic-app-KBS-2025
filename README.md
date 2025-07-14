@@ -17,7 +17,6 @@ A lightweight Flask web application that helps identify potential types of **del
 - `rdflib`
 - `flask`
 - Install dependencies:
-```bash
 pip install flask rdflib
 ---
 
